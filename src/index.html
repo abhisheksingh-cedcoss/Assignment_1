@@ -10,8 +10,7 @@
 </head>
 <body>
 <!-- 
-create a set of radio button-->
-
+create a set of checkboxes-->
 
 
 <h2>CatPhotoApp</h2>
@@ -33,19 +32,18 @@ create a set of radio button-->
     <li>other cats</li>
   </ol>
   <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
     <input type="text" placeholder="cat photo URL" required>
     <button type="submit">Submit</button>
 
 
- <label> 
-  <input type="radio" name="indoor-outdoor">Indoor 
-</label>
-<label> 
-  <input type="radio" name="indoor-outdoor">outdoor 
-</label>
+    <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+<label for="loving"><input id="loving" type="checkbox" name="personality"> caring</label>
+<label for="loving"><input id="loving" type="checkbox" name="personality"> playing</label>
 
   </form>
-
+</main>
 
 
 
